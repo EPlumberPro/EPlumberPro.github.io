@@ -448,7 +448,7 @@ return false;
 <article id="Foto" class="bgfoto">
     <h2> Наши работы</h2>
 
-<div class="gal">     
+<!--<div class="gal">     
  <ul id="slideshow" >
         <li>
 			<h3>Душевая кабина</h3> <span>assets/images/shower_cabin/shower_cabin.jpg</span>
@@ -737,23 +737,56 @@ return false;
 		slideshow.active="#fff";
 		slideshow.init("slideshow","image","imgprev","imgnext","imglink");
 	}
-</script>     
-    
+</script>  -->   
+  <div class="connected-carousels">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul>
+                            <li><img src="assets/images/bathtub/bathtub-1.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="assets/images/bathtub/bathtub-2.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="assets/images/bathtub/bathtub-3.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="assets/images/boiler/boiler2.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="assets/images/boiler/boiler3.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="assets/images/boiler/boiler4.jpg" width="600" height="400" alt=""></li>
+                        </ul>
+                    </div>
+                    <p class="photo-credits">
+                        Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+                    </p>
+                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+                </div>
+
+                <div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li><img src="assets/images/bathtub/bathtub-1.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="assets/images/bathtub/bathtub-2.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="assets/images/bathtub/bathtub-3.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="assets/images/boiler/boiler2.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="assets/images/boiler/boiler3.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="assets/images/boiler/boiler4.jpg" width="50" height="50" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
 </article>
 <article id="On-line" class="bgOn-line">
     
 <div class="form" >
     <h2>Онлайн-заявка</h2>
-    <form action="" method="post" class="decor">
+    <form action="/assets/submit.php" method="post" class="decor">
         <div class="form-left-decoration"></div>
         <div class="form-right-decoration"></div>
         
         <div class="form-inner">
             <h3>Написать нам</h3>
             <input type="text" name="name" value="" placeholder="Ваше имя">
-            <input type="email" placeholder="Email">
-            <input type="text" name="tel" value="" placeholder="Контактный телефон">
-            <textarea name="zayavka" placeholder="Заявка..." rows="3" wrap="physical"></textarea>
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="phone" value="" placeholder="Контактный телефон">
+            <textarea name="message" placeholder="Заявка..." rows="3" wrap="physical"></textarea>
             <input type="submit" value="Отправить">
         </div>
     </form>
