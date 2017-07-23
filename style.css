@@ -128,6 +128,7 @@ header{
     width: 50px;
     height: 50px;
 }
+
 .name {
     line-height: 0.75;
 }
@@ -141,7 +142,6 @@ header{
     font-family: 'Alice', serif;
     color: #3c6897;
 }
-
 .header a, .phone{
     font-family: 'Alice', serif;
     text-align: left;
@@ -175,13 +175,16 @@ header{
  .header a:hover .icon_mail{
     background: url(assets/images/sprite/1.jpg) -67px -5px no-repeat;
 }
-.icon_skype {
-    background: url(assets/images/sprite/skype.png)  no-repeat -1px -1px;
-}
 .icon_viber {
     background: url(assets/images/sprite/2.jpg)  no-repeat -1px -1px;
 }
-
+.skype {
+    text-align: left; 
+    position: absolute; 
+    left: -25px; 
+    top: 40px; 
+    z-index: 999;
+}
 .contactUs_tel {
     font-weight: bold;
     font-size: 1.2em;
@@ -267,18 +270,18 @@ header{
     left: 0px;
     top: 40px;
     width: 200px;
-    font-size: 0.7em;
+    font-size: 0.9em;
     z-index: 100;
     background: rgba(0,0,0,0.2);
     }
 .hamburger a {
-    padding: 5px;
+   padding: 15px;
     font-family: 'Alice', serif;
     transition: 1s all;
 }
 .hamburger:hover {
     background: rgba(0,0,0,0.4);
-    width: 200px;
+    width: 300px;
     text-align: left;
 }
     .hamburger:hover ul{
@@ -288,7 +291,8 @@ header{
  .hamburger li {
         border: 1px solid lightgray;
         border-bottom: none;
-     width: 200px;
+     width: 300px;
+     height: 30px;
     }
      .hamburger li:last-child {
         border-bottom: 1px solid lightgray;
@@ -357,6 +361,10 @@ h2 {
     background-color: #e6fdf8;
     cursor: pointer;
     position: relative;
+    box-shadow:  0 1px 4px rgba(0, 0, 0, .2),
+   -23px 0 20px -23px rgba(0, 0, 0, .4),
+   23px 0 20px -23px rgba(0, 0, 0, .4),
+   0 0 40px rgba(0, 0, 0, .1) inset;
 }
 
 .serv__img img{
@@ -447,7 +455,10 @@ h2 {
     width: 350px;
     margin-top: 30px;
     border-radius: 15%;
-    bo
+   box-shadow:  0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
 }
 .map_works_block h3 {
     font-size: 1.5em;
@@ -603,6 +614,10 @@ h2 {
   margin-top: 50px;
   background: white;
   border-radius: 30px;  
+    box-shadow:  0 1px 4px rgba(0, 0, 0, .2),
+   -23px 0 20px -23px rgba(0, 0, 0, .4),
+   23px 0 20px -23px rgba(0, 0, 0, .4),
+   0 0 40px rgba(0, 0, 0, .1) inset;
 }
 .form-left-decoration,
 .form-right-decoration {
@@ -693,11 +708,31 @@ h2 {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+.offer_block {
+    padding: 10px;
+    margin-left: 20px;
+    width: 400px;
+}
+.offer_ {
+    
+     box-shadow:
+   0 1px 4px rgba(0, 0, 0, .2),
+   -23px 0 20px -23px rgba(0, 0, 0, .4),
+   23px 0 20px -23px rgba(0, 0, 0, .4),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+    margin: 15px;
+    background-color: aliceblue;
+}
+.offer_ p {
+    font-size: 1em;
+    color: #707981;
+    padding: 10px;
+    text-align: justify;
+}
 
 .scrollup{
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     opacity:0.4;
     filter: alpha(opacity=40);
     position:fixed;
@@ -730,6 +765,7 @@ footer {
 
 .footer-name, .footer-nav, footer .contact, .footer-contact, .footer-icon{
     margin: 20px 30px 0 0;
+    padding: 10px;
 }
 .footer-icon {
     margin-right: 0;
@@ -770,6 +806,9 @@ footer {
     vertical-align: middle;
     border-radius: 15%;
     margin-top: 5px;
+}
+.social:last-child {
+    margin-right: 0;
 }
 .social-fb {
     background: url(assets/images/sprite/Preview%20-%20flat%20color%20socmed%20icons.png) -170px -625px no-repeat;
@@ -999,6 +1038,10 @@ footer {
     .change_img { 
     height: 230px;
 }
+    .skype {
+    left: -25px; 
+    top: 30px; 
+}
     .p {
         margin-top: 20px;
 }
@@ -1044,6 +1087,9 @@ footer {
     .footer-nav, footer>.contact, .footer-contact {
         display: none;
 }
+    .footer-name {
+        margin: 0;
+    }
 
    #wrapper {
     width:256px;
@@ -1067,8 +1113,20 @@ footer {
     #slidearea {
     width:206px; 
 }
+    .contactUs_tel {
+            padding-top: 20px;
+        }
    
 }
+    @media screen and (max-width: 330px){
+        .skype {
+    left: -25px; 
+    top: 50px; 
+}
+        .contactUs_tel {
+            padding-top: 30px;
+        }
+    }
    
 
    

@@ -9,7 +9,8 @@
     <meta name="description" content="PlumberPro предоставляет все виды сантехнических услуг в Киеве, Мариуполе. Звоните: (067) 164-53-85">
     
     <!-- Favicon -->
-<link href="assets/images/favicon.png" rel="icon" type="image/png">
+    <link href="assets/images/favicon.png" rel="icon" type="image/png">
+    
 	<link rel="stylesheet" type="text/css" href="style.css">
     
 	<link href="https://fonts.googleapis.com/css?family=Alice|Cookie|Open+Sans" rel="stylesheet">
@@ -107,18 +108,29 @@ return false;
             <span class="name2">услуги профессиональных сантехников
             </span>
         </div>
-        <div class="contact">
+           
+        <div class="contact" style="position: relative;">
+            <div class="skype"  title="Звонок или чат по Skype"><script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_Live:plumberpro86_1">
+ <script type="text/javascript">
+ Skype.ui({
+ "name": "dropdown",
+ "element": "SkypeButton_Call_Live:plumberpro86_1",
+ "participants": ["Live:plumberpro86"],
+ "imageSize": 24
+ });
+ </script>
+            </div></div>
         <a href="mailto:plumberpro86@gmail.com" title="Ждем Ваших писем"><div class="icon icon_mail"></div>plumberpro86@gmail.com</a>
-        <a href="skype: live:plumberpro86" title="Звонок по Skype"><div class=" icon icon_skype"></div>PlumberPro</a>
-        <a href="viber: +380 67 164 5385" title="Звонок по Viber"><div class="icon icon_viber"></div>(067) 164-53-85</a>
+        <a href="viber://add?number=380671645385" title="Звонок по Viber"><div class="icon icon_viber"></div>(067) 164-53-85</a> 
             </div>
-                    
         <div class="contactUs_tel">
             <div class="phone">(067) 164-53-85</div>
               <div class="phone">(066) 129-88-38</div>
                 <div class="phone">(093) 619-82-58</div>
     </div>
     </div>
+    
     <nav>
       
         
@@ -127,7 +139,7 @@ return false;
             <li><a href="#Services">Услуги по сантехнике/цены</a></li>
             <li><a href="#Foto">Фото выполненных работ</a></li>
              <li><a href="#On-line">Онлайн-заявка</a></li>
-            <li><a href="#">Вакансии</a></li>
+            
             <li class="offer" ><a  href="#Offer">Акции</a></li>
         </ul> 
     </nav>
@@ -142,7 +154,6 @@ return false;
             <li><a href="#Services">Услуги по сантехнике/цены</a></li>
             <li><a href="#Foto">Фото выполненных работ</a></li>
              <li><a href="#On-line">Онлайн-заявка</a></li>
-            <li><a href="#">Вакансии</a></li>
             <li><a  href="#Offer">Акции</a></li></ul></div>
   <img src='assets/images/backgrounds/buthroom66.jpg' id="image_1"/>
   <img src='assets/images/backgrounds/buthroom44.jpg' id="image_2"/>
@@ -760,13 +771,19 @@ return false;
 </div>
 <div id="Offer" class="offer_block">
     <h2>Действующие акции</h2>
+    <div class="offer_" title="Акции распространяются только на работы">
+        <p>При замене радиатора, бесплатная установка термостатических головок</p>
+    </div>
+    <div class="offer_" title="Акции распространяются только на работы">
+        <p>При монтаже водонагревателя - бесплатная установка редуктора давления</p></div>
+    <div class="offer_" title="Акции распространяются только на работы"><p>При установке счетчика отопления - беплатная замена счетчиков воды (до 2-х шт.)</p></div>
     </div>
 
    
 </article>
     <a href="#" class="scrollup" title="Вернуться к началу">Наверх</a>
 </section>	
-<footer>
+<footer id="foot">
     <div class="footer-name">
         <h4 class="name1">PlumberPro</h4><br>
         <span class="footer-name-2">© <span class="name1">«PlumberPro» </span>2017</span><br>
@@ -782,8 +799,7 @@ return false;
      </ul> 
     <div class="contact">
         <a href="mailto:plumberpro86@gmail.com" title="Ждем Ваших писем"><div class="icon icon_mail"></div>plumberpro86@gmail.com</a>
-        <a href="skype: live:plumberpro86" title="Звонок по Skype"><div class=" icon icon_skype"></div>PlumberPro</a>
-        <a href="viber: (067) 164-53-85" title="Звонок по Viber"><div class="icon icon_viber"></div>(067) 164-53-85</a>
+        <a href="#foot" title="Звонок по Viber"><div class="icon icon_viber"></div>(067) 164-53-85</a>
             </div>
     <div class="footer-contact">(067) 164-53-85 <br>
     (066) 129-88-38<br>
@@ -798,7 +814,6 @@ return false;
         </div>
    
 </footer>
-
-    
+  
 </body>
 <html>
