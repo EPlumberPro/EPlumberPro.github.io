@@ -113,7 +113,7 @@ header{
 .header{
 	width: 100%;
 	margin: 0 auto;
-	padding: 10px 30px;
+	padding: 10px 30px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
