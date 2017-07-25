@@ -113,7 +113,7 @@ header{
 .header{
 	width: 100%;
 	margin: 0 auto;
-	padding: 10px 30px 50px;
+	padding: 10px 30px 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -182,7 +182,7 @@ header{
     text-align: left; 
     position: absolute; 
     left: -25px; 
-    top: 40px; 
+    top: 30px; 
     z-index: 999;
 }
 .contactUs_tel {
@@ -836,16 +836,35 @@ footer {
 }
 
 .gallery {
-    margin: 20px;
+
+    margin:  20px 40px;
+    
+}
+.wrap {
+background: radial-gradient(transparent, transparent 4px, white 4px,white);
+padding: 10px;
+width: 300px;
+height: 220px;
+background-size: 20px 20px;
+background-position: -10px -10px; /*обрезаем узор по краю*/
+margin: 0 auto;
 }
 
-.gallery a img{    
-    /* округления старт 
-    -webkit-border-radius: 25px;
-    -moz-border-radius:  25px;
-    border-radius:  25px;
+
+.gallery a img{
+    background: radial-gradient(transparent, transparent 4px, white 4px,white);
+padding: 10px;
+width: 300px;
+height: 220px;
+background-size: 20px 20px;
+background-position: -10px -10px; /*обрезаем узор по краю*/
+margin: 0 auto;
+    /* округления старт */
+    -webkit-border-radius: 15px;
+    -moz-border-radius:  15px;
+    border-radius:  15px;
     /* округления конец */
-    
+   
     /* transition старт */
     -webkit-transition:All 1s ease;
     -moz-transition:All 1s ease;
@@ -853,20 +872,20 @@ footer {
     transition: all 1.0s ease;
     /* transition конец */
     
-    /* Тень старт*/ 
-    -webkit-box-shadow: 0px 2px 4px 1px #DFDFDF;
-    -moz-box-shadow: 0px 2px 4px 1px #DFDFDF;
-    box-shadow: 0px 2px 4px 1px #DFDFDF; 
+    /* Тень старт 
+    -webkit-box-shadow: 0px 1px 2px 1px #DFDFDF;
+    -moz-box-shadow: 0px 1px 2px 1px #DFDFDF;
+    box-shadow: 0px 1px 2px 1px #DFDFDF; 
     /* Тень конец */
     
     /* Прозрачнсоть старт */
-    -moz-opacity: 0.70;
+    -moz-opacity: 0.90;
     opacity: 0.90;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90);
     /* Прозрачнсоть конец */
     
-    margin-right:5px;     /* Отступ справа */
-    padding:10px; /* Внутренние отступы */
+    margin-right:10px;     /* Отступ справа */
+    padding:5px; /* Внутренние отступы */
     display:inline-block; /* отображение */
     height:200px; /* Высота */
 }
