@@ -736,9 +736,9 @@ h2 {
     opacity:0.4;
     filter: alpha(opacity=40);
     position:fixed;
-    bottom:130px;
+    bottom:30px;
     right:15px;
-    display:none;
+    /*display: none;*/
     text-indent:-9999px;
     background: url("assets/images/icon_top.png") no-repeat;
     background-size: cover;
