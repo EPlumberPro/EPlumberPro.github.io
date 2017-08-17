@@ -211,6 +211,7 @@ header{
     font-family: 'Alice', serif;
 	padding: 5px 30px;
     transition: 1s all;
+    display: block;
 }
 .nav li a:hover {
     font-size: 110%;
@@ -278,6 +279,8 @@ header{
    padding: 15px;
     font-family: 'Alice', serif;
     transition: 1s all;
+    padding: 10px 100px;
+    display: block;
 }
 .hamburger:hover {
     background: rgba(0,0,0,0.4);
@@ -291,17 +294,12 @@ header{
  .hamburger li {
         border: 1px solid lightgray;
         border-bottom: none;
-     width: 300px;
-     height: 30px;
     }
      .hamburger li:last-child {
         border-bottom: 1px solid lightgray;
     }
 .hamburger li:hover {
     background: rgba(0,0,0,0.9)
-}
-.hamburger a {
-    width: 100%;
 }
 .main {
     position: absolute; top: 0; width: 30%; height: 100%; 
