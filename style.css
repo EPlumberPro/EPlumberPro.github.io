@@ -270,17 +270,18 @@ header{
     position: absolute;
     left: 0px;
     top: 40px;
-    width: 200px;
-    font-size: 0.9em;
+    width: 300px;
+    font-size: 1em;
     z-index: 100;
     background: rgba(0,0,0,0.2);
     }
 .hamburger a {
-   padding: 15px;
     font-family: 'Alice', serif;
     transition: 1s all;
-    padding: 10px 100px;
+    padding: 5px;
+
     display: block;
+    
 }
 .hamburger:hover {
     background: rgba(0,0,0,0.4);
@@ -294,6 +295,7 @@ header{
  .hamburger li {
         border: 1px solid lightgray;
         border-bottom: none;
+     width: 300px;
     }
      .hamburger li:last-child {
         border-bottom: 1px solid lightgray;
