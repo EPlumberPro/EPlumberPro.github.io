@@ -66,7 +66,7 @@ html {
 body {
 	color: #4040;
 	text-align: center;
-	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	font-size: 16px; /* используем безопасные шрифтовые CSS стеки */
 	min-height:100%;
 	background: #f9f9f9;
 	font-family: "Open Sans", sans-serif;
